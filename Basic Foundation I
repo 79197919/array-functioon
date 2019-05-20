@@ -1,0 +1,27 @@
+//Get 1 to 255 - Write a function that returns an array with all the numbers from 1 to 255.
+
+function arrAllNums(){
+
+  for(let i = 1; i <= 255; i +=1){
+
+console.log(i)
+  }
+}
+
+arrAllNums()
+
+//
+
+function getArray(){
+
+  let array = [];
+
+  for(let i =1; i <=255 ; i ++){
+
+    array.push(i)
+  }
+
+return array
+}
+
+getArray()
