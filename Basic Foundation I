@@ -338,3 +338,127 @@ return array[i]
 }
 
 secondToLast()
+
+
+
+
+////Double Vision - Given an array (similar to saying 'takes in an array'), create a function that returns a new array where each value in the original array has been doubled.  Calling double([1,2,3]) should return [2,4,6] without changing the original array.
+function doubleArray(){
+  let newArray= []
+    let array = [1,2,3,4,5]
+
+    for (let i = 0; i <array.length; i ++){
+newArray.push(array[i]*2)
+    }
+    console.log(array)
+    console.log(newArray)
+  
+}
+doubleArray()
+
+
+////Count Positives - Given an array of numbers, create a function to replace the last value with the number of positive values found in the array.  Example, countPositives([-1,1,1,1]) changes the original array to [-1,1,1,3] and returns it. 
+function countPositives(){
+
+  let count = []
+  let array = [1,2,3-4,5,1]
+
+  for (let i = 0; i <array.length; i++){
+if(array[i] > 0){
+
+  count ++
+
+}
+
+  
+  }
+array[array.length-2] = count
+  return array
+}
+
+countPositives()
+
+
+
+////Increment the Seconds - Given an array of numbers arr, add 1 to every other element, specifically those whose index is odd (arr[1], arr[3], arr[5], etc).  Afterward, console.log each array value and return arr.
+
+function increamentSecs(arr){
+
+console.log("this is the old array" , arr)
+  for(let i = 0; i <arr.length; i +=2){
+
+arr[i] = arr[i] + 1
+
+console.log("this is the index", i)
+
+  }
+
+  console.log("this is the new array" , arr)
+  return arr
+}
+increamentSecs([1,2,3,4,5,6])
+
+
+
+//
+//Add Seven - Build a function that accepts an array. Return a new array with all the values of the original, but add 7 to each. Do not alter the original array.  Example, addSeven([1,2,3]) should return [8,9,10] in a new array.
+
+function addSeven(arr){
+  let newArray= []
+console.log("this is the old array" , arr)
+  for(let i = 0; i < arr.length; i ++){
+newArray.push(arr[i] + 7)
+
+  }
+  return newArray
+}
+addSeven([1,2,3,4,5])
+
+
+
+////Reverse Array - Given an array, write a function that reverses its values, in-place.  Example: reverse([3,1,6,4,2]) returns the same array, but now contains values reversed like so... [2,4,6,1,3].  Do this without creating an empty temporary array.  (Hint: you'll need to swap values).
+
+function reverseArray(arr){
+console.log("this is the old array" , arr)
+  for(let i = 0; i < arr.length; i ++){
+//return arr.reverse() 
+  }
+
+  console.log(" this is the new reversed array " ,arr.reverse())
+}
+
+reverseArray([3,1,6,4,2])
+
+//function outLook(arr){
+
+  
+
+  console.log("this is the old array" , arr)
+  for(let i = 0; i < arr.length; i ++ ){
+
+if(arr[i] > 0){
+arr[i] = arr[i] * -1
+}
+
+  }
+console.log("this is the new array" ,arr)
+  return arr
+}
+
+
+outLook([1,-3,5])
+
+
+////Always Hungry - Create a function that accepts an array, and prints "yummy" each time one of the values is equal to "food".  If no array values are "food", then print "I'm hungry" once
+
+function alwaysHungry(str){
+
+  for(let i = 0; i <str.length; i ++){
+if(str[i] === "food"){
+  console.log("yummy")
+}else
+console.log("am hungry once when eating " + str[i])
+  }
+}
+
+alwaysHungry(["food", "rice","mango","food"])
